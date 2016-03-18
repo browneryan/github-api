@@ -1,14 +1,12 @@
-var apiKey = require('./../.env').apiKey;
+var getRepos = require('./../js/get-repos.js').getRepos;
+var Search = require("./../js/get-repos.js").Search;
 var newSearch = new Search();
 
 $(function() {
   $('#searchUsername').click(function() {
+    // $('#search').val("");
     var search = $('#search').val();
-    $('#search').val("");
-    // newSearch.getRepos();use an object??
-    $('.showUser').text("Your search for " + search + " returned: ");//add specific item from API you want here
-    }).fail(function(error) {
-      $('.showUser').text(error.responseJSON.message);
+    console.log(search);
+    newSearch.getRepos(search);
     });
   });
-});
