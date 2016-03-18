@@ -1,0 +1,15 @@
+$gray : #d3d3d3;
+$green : #5BBA5F;
+
+.btn-success {
+  margin-top: 10px;
+}
+
+#header {
+  background: $gray;
+  padding: 5px;
+  font-weight: bold;
+  .text {
+    font-style: italic;
+  }
+}
