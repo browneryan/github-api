@@ -20,7 +20,7 @@ A web application that allows users to search by GitHub usernames in order to se
 ## API Key Setup
 
 * You will need a GitHub API key in order to use this app.  
-* Visit the 'settings' area of your GitHub account(look for it in the dropdown underneath your profile icon/pic)
+* Visit the 'settings' area of your GitHub account (look for it in the dropdown underneath your profile icon/pic)
 * Select 'Personal Access Tokens' from the sidebar on the left
 * Click the Generate New Token button in the upper-right corner
 * Create a .env file in the top level of your folder and open it
