@@ -1,11 +1,10 @@
-var Search = require("./../js/get-repos.js").Search;
-var newSearch = new Search();
+var getRepos = require("./../js/get-repos.js").getRepos;
 
 $(function() {
   $('.showUsers').hide();
   $("#submit").submit(function(e) {
     var search = $('#search').val();
-    newSearch.getRepos(search);
+    getRepos(search);
     $('#search').val("");
     e.preventDefault();
   });
